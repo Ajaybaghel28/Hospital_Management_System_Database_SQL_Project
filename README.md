@@ -4,8 +4,8 @@
 This project involves designing and querying a Hospital Management System database. The system manages information related to doctors, patients, medical records, billing, and appointments. The project includes an Entity-Relationship (ER) diagram and a comprehensive set of SQL queries for different levels of complexity.
 
 ## ER Diagram:
-![ER_Diagram](https://github.com/user-attachments/assets/ae1aad5b-abcc-4f87-847c-9fab1bb89178)
 The Entity-Relationship (ER) Diagram represents the structure of a Hospital Management System database, outlining key entities, their attributes, and relationships. This diagram serves as the blueprint for managing patient data, doctor information, appointments, billing, and medical records within the system.
+![ER_Diagram](https://github.com/user-attachments/assets/ae1aad5b-abcc-4f87-847c-9fab1bb89178)
 
 ## Key Entities and Relationships:
 ### 🧑‍⚕️ Doctors:
