@@ -6,7 +6,7 @@ This project involves designing and querying a Hospital Management System databa
 ## ER Diagram:
 
 ## Database Structure:
-Tables:
+### Tables:
 - patients: Contains details like patient_id, name, dob, gender, address, and phone_number.
 - doctors: Stores doctor information such as doctor_id, name, specialization, and contact_info.
 - appointments: Manages appointment data with fields like appointment_id, doctor_id, patient_id, appointment_date, and status.
@@ -14,8 +14,7 @@ Tables:
 - medical_records: Stores medical data such as record_id, patient_id, doctor_id, diagnosis, treatment_plan, medications_prescribed, and record_date.
 
 ## SQL Queries by Level:
-- Basic Level:
-  
+### Basic Level:
 1. Retrieve all patient details.
 sql
 Copy code
@@ -41,7 +40,7 @@ sql
 Copy code
 SELECT name, contact_info FROM doctors;
 
-- Intermediate Level:
+### Intermediate Level:
   
 6. Find all patients who haven’t paid their bills.
 sql
@@ -81,7 +80,7 @@ FROM appointments
 GROUP BY patient_id 
 HAVING COUNT(appointment_id) > 3;
 
-- Advanced Level:
+### Advanced Level:
 
 12. Find patients diagnosed with a specific condition.
 sql
@@ -117,8 +116,7 @@ FROM doctors d
 INNER JOIN appointments a ON d.doctor_id = a.doctor_id 
 WHERE a.appointment_date >= CURRENT_DATE - INTERVAL '30 days';
 
-- Scenario-Based Questions:
-  
+### Scenario-Based Questions:
 16. Generate a detailed report showing patient name, doctor specialization, diagnosis, treatment plan, and payment status.
 sql
 Copy code
@@ -135,3 +133,14 @@ SELECT b.service_type, SUM(b.amount_charged) AS total_revenue,
 ROUND(CAST(SUM(b.amount_charged) * 100.0 / (SELECT SUM(amount_charged) FROM billing) AS NUMERIC), 2) AS percentage_contribution 
 FROM billing b 
 GROUP BY b.service_type;
+
+## Key Insights and Analysis:
+Doctor Performance: Analyze the number of appointments and revenue per doctor.
+Patient Data: Track patient visit history and their medical records.
+Billing Trends: Understand the revenue generation by different services or doctors.
+Appointment Management: Identify appointment trends and status (e.g., confirmed, cancelled).
+
+## Conclusion:
+This project provides a scalable and well-structured database solution for hospital management, enabling efficient data handling and insightful analysis of hospital operations.
+
+
