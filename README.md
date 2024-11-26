@@ -4,6 +4,8 @@
 This project involves designing and querying a Hospital Management System database. The system manages information related to doctors, patients, medical records, billing, and appointments. The project includes an Entity-Relationship (ER) diagram and a comprehensive set of SQL queries for different levels of complexity.
 
 ## ER Diagram:
+![ER_Diagram](https://github.com/user-attachments/assets/ae1aad5b-abcc-4f87-847c-9fab1bb89178)
+
 
 ## Database Structure:
 ### Tables:
@@ -119,10 +121,10 @@ FROM billing b
 GROUP BY b.service_type;
 ```
 ## Key Insights and Analysis:
-Doctor Performance: Analyze the number of appointments and revenue per doctor.
-Patient Data: Track patient visit history and their medical records.
-Billing Trends: Understand the revenue generation by different services or doctors.
-Appointment Management: Identify appointment trends and status (e.g., confirmed, cancelled).
+- Doctor Performance: Analyze the number of appointments and revenue per doctor.
+- Patient Data: Track patient visit history and their medical records.
+- Billing Trends: Understand the revenue generation by different services or doctors.
+- Appointment Management: Identify appointment trends and status (e.g., confirmed, cancelled).
 
 ## Conclusion:
 This project provides a scalable and well-structured database solution for hospital management, enabling efficient data handling and insightful analysis of hospital operations.
