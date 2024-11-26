@@ -16,10 +16,9 @@ This project involves designing and querying a Hospital Management System databa
 ## SQL Queries by Level:
 ### Basic Level:
 1. Retrieve all patient details.
-sql
-Copy code
+```sql
 SELECT * FROM patients;
-
+```
 2. List all appointments for a specific doctor.
 sql
 Copy code
