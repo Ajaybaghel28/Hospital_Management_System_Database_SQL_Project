@@ -5,7 +5,46 @@ This project involves designing and querying a Hospital Management System databa
 
 ## ER Diagram:
 ![ER_Diagram](https://github.com/user-attachments/assets/ae1aad5b-abcc-4f87-847c-9fab1bb89178)
+The Entity-Relationship (ER) Diagram represents the structure of a Hospital Management System database, outlining key entities, their attributes, and relationships. This diagram serves as the blueprint for managing patient data, doctor information, appointments, billing, and medical records within the system.
 
+## Key Entities and Relationships:
+### 🧑‍⚕️ Doctors:
+- Attributes: doctor_id, name, specialization, contact_info
+- Primary Key: doctor_id
+- Relationships:
+  - Linked to appointments, billing, and medical_records through doctor_id.
+    
+### 🧍 Patients:
+- Attributes: patient_id, name, dob, gender, address, phone_number
+- Primary Key: patient_id
+- Relationships:
+  - Connected to appointments, billing, and medical_records through patient_id.
+    
+### 📆 Appointments:
+- Attributes: appointment_id, patient_id, doctor_id, appointment_date, status
+- Primary Key: appointment_id
+- Relationships:
+  - patient_id and doctor_id link to the patients and doctors entities, respectively.
+    
+### 💳 Billing:
+- Attributes: bill_id, patient_id, doctor_id, service_date, service_type, amount_charged, payment_status
+- Primary Key: bill_id
+- Relationships:
+  - Connected to patients and doctors via patient_id and doctor_id.
+    
+### 📝 Medical Records:
+- Attributes: record_id, patient_id, doctor_id, diagnosis, treatment_plan, medications_prescribed, record_date
+- Primary Key: record_id
+- Relationships:
+  - Links to patients and doctors through patient_id and doctor_id.
+    
+### Relationships Overview:
+- One-to-Many Relationships:
+- Doctors → Appointments: One doctor can have multiple appointments.
+- Patients → Appointments: One patient can have multiple appointments.
+- Patients → Medical Records: One patient can have multiple medical records.
+- Doctors → Medical Records: One doctor can handle multiple medical records.
+- Patients → Billing: One patient can have multiple billing records.
 
 ## Database Structure:
 ### Tables:
